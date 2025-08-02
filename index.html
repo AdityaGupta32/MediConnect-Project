@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E⚕️%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>MediConnect</title>
+</head>
+
+<body>
+    <nav id="nav" class="sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="navTop flex justify-between items-center py-4">
+                <div id="homeButton" class="navItem flex items-center cursor-pointer">
+                    <svg class="w-8 h-8 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <h1 class="text-2xl font-bold logo-font">MediConnect</h1>
+                </div>
+                <div class="navItem flex items-center gap-4">
+                    <button class="loginButton px-4 py-2 rounded-full text-sm font-semibold border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-colors">Login</button>
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            <div class="slider-toggle"></div>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="navBottom flex justify-center items-center space-x-4 md:space-x-8 py-2 overflow-x-auto">
+                <h3 class="menuItem text-sm md:text-base whitespace-nowrap px-2">Cardiology</h3>
+                <h3 class="menuItem text-sm md:text-base whitespace-nowrap px-2">Neurology</h3>
+                <h3 class="menuItem text-sm md:text-base whitespace-nowrap px-2">Emergency</h3>
+                <h3 class="menuItem text-sm md:text-base whitespace-nowrap px-2">Pediatrics</h3>
+                <h3 class="menuItem text-sm md:text-base whitespace-nowrap px-2">Appointments</h3>
+                <h3 class="menuItem text-sm md:text-base whitespace-nowrap px-2">Lab Services</h3>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div id="mainPage" class="page active">
+            <div class="slider">
+                <div class="sliderWrapper">
+                    </div>
+            </div>
+            
+            <section class="why-choose-us">
+                <h2 class="section-title">Your Health, Our Priority</h2>
+                <p class="section-subtitle">Discover the MediConnect difference. We blend compassionate care with cutting-edge technology to provide a healthcare experience that's truly centered around you.</p>
+                <div class="why-cards-container">
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.004 9.004 0 0112 21" /></svg>
+                        </div>
+                        <h3 class="why-title">Advanced Technology</h3>
+                        <p>We invest in state-of-the-art diagnostic and treatment technologies to ensure accurate results and effective care.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9 9.75h.008v.008H9V9.75zm6 0h.008v.008H15V9.75z" /></svg>
+                        </div>
+                        <h3 class="why-title">Patient-First Approach</h3>
+                        <p>Your comfort, concerns, and well-being are at the core of everything we do. We listen, we care, and we heal together.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" /></svg>
+                        </div>
+                        <h3 class="why-title">Seamless Experience</h3>
+                        <p>From online appointment booking to digital health records, we make managing your health simple and accessible.</p>
+                    </div>
+                </div>
+            </section>
+           
+            <div class="features">
+                <div class="feature" data-page="emergencyPage">
+                    <svg class="featureIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span class="featureTitle">24/7 Emergency Care</span>
+                    <span class="featureDesc">Immediate, life-saving care available around the clock.</span>
+                </div>
+                <div class="feature" data-page="doctorsPage">
+                    <svg class="featureIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <span class="featureTitle">Experienced Doctors</span>
+                    <span class="featureDesc">A team of highly qualified and experienced medical professionals.</span>
+                </div>
+                <div class="feature" data-page="onlineAppointmentsPage">
+                    <svg class="featureIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <span class="featureTitle">Online Appointments</span>
+                    <span class="featureDesc">Book your appointments easily from the comfort of your home.</span>
+                </div>
+                <div class="feature" data-page="patientSupportPage">
+                     <svg class="featureIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    <span class="featureTitle">Online Support</span>
+                    <span class="featureDesc">Dedicated support team to assist you with any queries.</span>
+                </div>
+            </div>
+
+            <div class="service-details-section" id="service">
+                <img src="https://images.unsplash.com/photo-1576765974102-b75a9ab258a5?auto=format&fit=crop&w=600&q=80" alt="Service Image" class="serviceImg">
+                <div class="serviceDetails">
+                    <h1 class="serviceTitle">Cardiology</h1>
+                    <p class="serviceDesc">Our Cardiology department offers state-of-the-art diagnostic and therapeutic services for all types of heart conditions. We are committed to providing comprehensive cardiac care.</p>
+                    <button class="appointmentButton">Book an Appointment</button>
+                </div>
+            </div>
+            
+            <section id="bloodTestSection" class="blood-test-section">
+                <h2 class="section-title">Comprehensive Lab Services</h2>
+                <p class="section-subtitle">Our in-house laboratory is equipped with the latest technology to provide fast and accurate results for a wide range of diagnostic tests.</p>
+                <div class="test-cards-container">
+                    <div class="test-card">
+                        <img src="https://images.pexels.com/photos/2280547/pexels-photo-2280547.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Complete Blood Count" class="test-card-img">
+                        <div class="test-card-content">
+                            <h3 class="test-card-title">Complete Blood Count</h3>
+                            <p class="test-card-desc">A fundamental test to evaluate your overall health and detect a wide range of disorders.</p>
+                            <button class="test-card-button openAppointmentModalBtn" data-test-name="Complete Blood Count">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="test-card">
+                        <img src="https://images.pexels.com/photos/7108110/pexels-photo-7108110.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Lipid Profile" class="test-card-img">
+                        <div class="test-card-content">
+                            <h3 class="test-card-title">Lipid Profile</h3>
+                            <p class="test-card-desc">Measures cholesterol and triglycerides to assess your risk for cardiovascular disease.</p>
+                            <button class="test-card-button openAppointmentModalBtn" data-test-name="Lipid Profile">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="test-card">
+                        <img src="https://images.pexels.com/photos/7108110/pexels-photo-7108110.jpeg?auto=compress&cs=tinysrgb&w=600">
+                        <div class="test-card-content">
+                            <h3 class="test-card-title">Blood Sugar Test</h3>
+                            <p class="test-card-desc">Essential for diagnosing and managing diabetes by measuring glucose levels.</p>
+                            <button class="test-card-button openAppointmentModalBtn" data-test-name="Blood Sugar Test">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="test-card">
+                        <img src="https://images.pexels.com/photos/7108343/pexels-photo-7108343.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Thyroid Panel" class="test-card-img">
+                        <div class="test-card-content">
+                            <h3 class="test-card-title">Thyroid Panel</h3>
+                            <p class="test-card-desc">Evaluates thyroid gland function and helps diagnose thyroid disorders.</p>
+                            <button class="test-card-button openAppointmentModalBtn" data-test-name="Thyroid Panel">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="emergencyPage" class="page">
+            <div class="service-page-container">
+                <h1 class="service-page-title">24/7 Emergency Care</h1>
+                <div class="service-page-content">
+                    <img src="https://images.pexels.com/photos/7108343/pexels-photo-7108343.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Emergency Care">
+                    <p>When a medical emergency strikes, time is critical. MediConnect's Emergency Department is prepared to handle any situation, 24 hours a day, 7 days a week. Our facility is equipped with advanced life-support systems and staffed by a dedicated team of board-certified emergency physicians, critical care nurses, and technicians who are trained to provide rapid, decisive, and compassionate care. From trauma care to acute medical conditions, we adhere to the highest standards of emergency protocols to ensure the best possible outcomes for our patients. Your life is our priority, and we are always ready to serve.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="doctorsPage" class="page">
+            <div class="service-page-container">
+                <h1 class="service-page-title">Our Experienced Doctors</h1>
+                <div class="service-page-content">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80" alt="Experienced Doctors">
+                    <p>The foundation of MediConnect is our exceptional team of medical professionals. We have brought together a diverse group of highly skilled and experienced doctors, surgeons, and specialists who are leaders in their respective fields. Each physician is board-certified and has undergone rigorous training at prestigious national and international institutions. We foster a culture of collaboration and continuous learning, ensuring that our patients benefit from the collective knowledge of our entire team. We believe in treating patients, not just diseases, with empathy and respect at the forefront of our practice.</p>
+                    <div id="doctorList" class="doctor-list-container">
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="onlineAppointmentsPage" class="page">
+            <div class="service-page-container">
+                <h1 class="service-page-title">Online Appointments</h1>
+                <div class="service-page-content">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80" alt="Online Appointments">
+                    <p>Healthcare should adapt to your lifestyle. MediConnect's powerful online portal puts you in control of your healthcare journey. Our intuitive system allows you to effortlessly browse doctor profiles, view their real-time availability, and book an appointment in just a few clicks. The secure patient portal also provides access to your medical history, lab results, and prescriptions. You can manage upcoming visits, set reminders, and even initiate teleconsultations from the comfort of your home. Experience the convenience of modern healthcare, designed for your busy life.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="patientSupportPage" class="page">
+            <div class="service-page-container">
+                <h1 class="service-page-title">Dedicated Online Support</h1>
+                <div class="service-page-content">
+                    <img src="https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&w=900&q=80" alt="Patient Support">
+                    <p>Navigating the complexities of healthcare can be overwhelming, but you're never alone with MediConnect. Our dedicated patient support team is your personal advocate, ready to assist with any non-medical queries. Whether you need help understanding the billing process, clarifying insurance coverage, scheduling follow-up tests, or coordinating with different departments, our team is available via phone, email, or live chat. We are committed to providing a seamless and stress-free experience, allowing you to focus on what matters most—your health and recovery.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 class="section-title text-left">Get In Touch</h2>
+                <p class="contact-desc">Have a question or need to schedule a visit? Our team is here to help. Reach out to us through any of the methods below, and we'll get back to you promptly.</p>
+                <ul class="contact-details">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                        <span>123 Health St, Wellness City, Mumbai, MH 400001</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 6.75z" /></svg>
+                        <span>+91 (22) 2345 6789</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25-2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
+                        <span>support@mediconnect.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-form-wrapper">
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required class="contact-input">
+                    <input type="email" placeholder="Your Email" required class="contact-input">
+                    <textarea placeholder="Your Message" rows="5" required class="contact-input"></textarea>
+                    <button type="submit" class="contact-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="appointment-modal">
+        <h1 class="modalTitle">Book Your Appointment</h1>
+        <span class="close">X</span>
+        <label>Name and Surname</label>
+        <input type="text" placeholder="John Doe" class="modalInput">
+        <label>Phone Number</label>
+        <input type="text" placeholder="+1 234 5678" class="modalInput">
+        <label for="doctorSelect">Select Doctor</label>
+        <select id="doctorSelect" class="modalInput">
+            </select>
+        <label>Preferred Date</label>
+        <input type="date" id="appointmentDate" class="modalInput">
+        <label for="appointmentReason">Reason for Visit / Test</label>
+        <input type="text" id="appointmentReason" placeholder="e.g. General Consultation, Blood Test" class="modalInput">
+        <div id="availabilityStatus" class="availability-status"></div>
+        <button class="modalButton">Submit Request</button>
+    </div>
+
+    <div id="confirmationPage" class="confirmation-page">
+        <div class="confirmation-card">
+            <h2 class="confirmation-title">Appointment Confirmed!</h2>
+            <p><strong>Patient:</strong> <span id="confirmPatientName"></span></p>
+            <p><strong>Doctor:</strong> <span id="confirmDoctorName"></span></p>
+            <p><strong>Date:</strong> <span id="confirmDate"></span></p>
+            <p><strong>Time:</strong> <span id="confirmTime"></span></p>
+            <p id="confirmReasonWrapper"><strong>Reason:</strong> <span id="confirmReason"></span></p>
+            <button id="closeConfirmation" class="modalButton">Close</button>
+        </div>
+    </div>
+
+    <div id="loginPage" class="login-page">
+        <div class="form-container">
+            <span class="close-login">X</span>
+            <form id="loginForm">
+                <h2 class="text-2xl font-bold text-center mb-4">Login</h2>
+                <input type="email" placeholder="Email Address" class="modalInput" required>
+                <input type="password" placeholder="Password" class="modalInput" required>
+                <button type="submit" class="modalButton">Login</button>
+                <p id="switchToRegister" class="form-switch-link">Don't have an account? Register</p>
+            </form>
+            <form id="registerForm" class="hidden">
+                <h2 class="text-2xl font-bold text-center mb-4">Register</h2>
+                <input type="text" placeholder="Full Name" class="modalInput" required>
+                <input type="email" placeholder="Email Address" class="modalInput" required>
+                <input type="password" placeholder="Password" class="modalInput" required>
+                <button type="submit" class="modalButton">Register</button>
+                <p id="switchToLogin" class="form-switch-link">Already have an account? Login</p>
+            </form>
+        </div>
+    </div>
+
+    <footer class="py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle text-lg font-bold mb-4">About Us</h1>
+                <ul class="space-y-2">
+                    <li class="fListItem cursor-pointer hover:text-white">Company</li>
+                    <li class="fListItem cursor-pointer hover:text-white"><a href="#contact">Contact</a></li>
+                    <li class="fListItem cursor-pointer hover:text-white">Careers</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle text-lg font-bold mb-4">Our Services</h1>
+                <ul class="fList space-y-2">
+                    <li class="fListItem cursor-pointer hover:text-white">Cardiology</li>
+                    <li class="fListItem cursor-pointer hover:text-white">Neurology</li>
+                    <li class="fListItem cursor-pointer hover:text-white">Emergency</li>
+                    <li class="fListItem cursor-pointer hover:text-white">Pediatrics</li>
+                </ul>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle text-lg font-bold mb-4">Follow Us</h1>
+                <div class="social-icons flex gap-4 mb-4">
+                    <a href="#" aria-label="Facebook" class="social-link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v2.385z"/></svg></a>
+                    <a href="#" aria-label="Twitter" class="social-link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-.424.727-.666 1.584-.666 2.477 0 1.916.92 3.722 2.311 4.718-.84-.027-1.624-.26-2.303-.638v.057c0 2.68 1.905 4.98 4.49 5.485-.468.128-.96.195-1.465.195-.36 0-.706-.035-1.038-.098.718 2.298 2.89 3.977 5.49 4.026-1.923 1.508-4.349 2.4-6.98 2.4-.45 0-.893-.026-1.328-.076 2.478 1.588 5.42 2.51 8.616 2.51 9.941 0 15.402-8.25 15.289-15.54-.002-.24-.007-.478-.02-.714.99-.714 1.85-1.608 2.533-2.62z"/></svg></a>
+                    <a href="#" aria-label="LinkedIn" class="social-link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                </div>
+                <div class="copyright">&copy; 2025 MediConnect. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
